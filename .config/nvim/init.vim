@@ -19,6 +19,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 set title
@@ -30,7 +31,10 @@ set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
-colorscheme vim
+"colorscheme vim
+colorscheme slate
+hi Normal guibg=NONE ctermbg=NONE
+
 
 " Some basics:
 	nnoremap c "_c
